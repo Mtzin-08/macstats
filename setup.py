@@ -5,6 +5,7 @@ APP_NAME = 'MacStats'
 DATA_FILES = []
 OPTIONS = {
     'argv_emulation': True,
+    'iconfile': 'assets/app-icon.icns',
     'plist': {
         'CFBundleName': APP_NAME,
         'LSUIElement': True,  # run as agent (no dock icon)
