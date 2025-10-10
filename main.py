@@ -96,7 +96,7 @@ class MacStatsApp(rumps.App):
         # Build menu with checkable modules
         self.module_items: Dict[str, rumps.MenuItem] = {}
         self.menu = [
-            rumps.MenuItem("Show in menu bar", callback=None),
+            rumps.MenuItem("MacStats", callback=None),
             None,  # separator
         ]
 
