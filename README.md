@@ -3,6 +3,7 @@
 A tiny, configurable **menu bar** app for macOS written in Python. Choose which stats to show with simple checkboxes in the app menu. No windows. No fluff.
 
 **Modules available**
+
 - CPU usage
 - Memory usage
 - Network rate (upload / download)
@@ -29,6 +30,7 @@ Grant **Accessibility** permission for the terminal you run from if macOS prompt
 Config is stored at `~/.macstats/config.json` after you hit **Save settings** in the app menu.
 
 ## Packaging into a .app (optional)
+
 You can use `py2app` if you want a double‑clickable `.app`:
 
 ```bash
@@ -47,6 +49,7 @@ open dist/MacStats.app
 - **GPU** is a placeholder; enabling it tries to parse `powermetrics --samplers gpu_power -n 1` output. For accurate data, you’ll likely need to run a privileged helper and cache samples at a lower frequency.
 
 ## Roadmap ideas
+
 - Per‑core CPU and memory pressure indicator
 - Per‑process top talkers for network (sampling `nettop`)
 - A compact icon set with symbols instead of text
@@ -55,4 +58,5 @@ open dist/MacStats.app
 - Configurable update interval
 
 ## License
+
 MIT
