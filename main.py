@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# macstats_mvp: Minimal macOS menu bar stats app in Python
+# macstats: Minimal macOS menu bar stats app in Python
 # - One menubar item shows selected stats (CPU, RAM, Network, Disk, Battery, experimental GPU)
 # - App menu contains checkboxes to show/hide modules; "Save Settings" persists your choices
 # - Built with rumps (Cocoa menu bar wrapper) and psutil for system metrics
@@ -16,7 +16,7 @@
 # Notes:
 # - GPU is marked experimental. Accurate GPU utilization on macOS isn't exposed via psutil.
 #   You can try powermetrics (Apple Silicon, requires sudo) and adapt the placeholder in get_gpu().
-# - On first run, a config file is created at ~/.macstats_mvp/config.json
+# - On first run, a config file is created at ~/.macstats/config.json
 
 import os
 import json
@@ -30,8 +30,8 @@ from typing import Dict, Any, Tuple
 import rumps
 import psutil
 
-APP_NAME = "MacStats MVP"
-CONFIG_DIR = Path.home() / ".macstats_mvp"
+APP_NAME = "MacStats"
+CONFIG_DIR = Path.home() / ".macstats"
 CONFIG_PATH = CONFIG_DIR / "config.json"
 
 DEFAULT_CONFIG = {

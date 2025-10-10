@@ -1,4 +1,4 @@
-# MacStats MVP (Python, macOS menu bar)
+# MacStats (Python, macOS menu bar)
 
 A tiny, configurable **menu bar** app for macOS written in Python. Choose which stats to show with simple checkboxes in the app menu. No windows. No fluff.
 
@@ -26,7 +26,7 @@ python3 main.py
 
 Grant **Accessibility** permission for the terminal you run from if macOS prompts you (rumps embeds a status item; usually no special permission is needed for reading stats, but prompts can vary).
 
-Config is stored at `~/.macstats_mvp/config.json` after you hit **Save settings** in the app menu.
+Config is stored at `~/.macstats/config.json` after you hit **Save settings** in the app menu.
 
 ## Packaging into a .app (optional)
 You can use `py2app` if you want a double‑clickable `.app`:
@@ -34,7 +34,7 @@ You can use `py2app` if you want a double‑clickable `.app`:
 ```bash
 pip install py2app
 python3 setup.py py2app
-open dist/MacStats\ MVP.app
+open dist/MacStats.app
 ```
 
 > Note: First launch of unsigned apps may require right‑click → Open.
