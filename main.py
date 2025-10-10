@@ -125,7 +125,7 @@ class MacStatsApp(rumps.App):
         # Initial title
         self._update_title()
 
-    # ===== Module toggling and persistence =====
+    #  Module toggling and persistence 
     def _toggle_module(self, key: str, sender: rumps.MenuItem):
         sender.state = not sender.state
         self.enabled[key] = bool(sender.state)
@@ -137,18 +137,18 @@ class MacStatsApp(rumps.App):
         save_config(self.cfg)
         rumps.notification(title=APP_NAME, subtitle="Settings saved", message=str(CONFIG_PATH))
 
-    # ===== App control =====
+    #  App control 
     def _quit(self, _):
         rumps.quit_application()
 
     def _refresh_now(self, _):
         self._update_title(force=True)
 
-    # ===== Timer tick =====
+    #  Timer tick 
     def _tick(self, _):
         self._update_title()
 
-    # ===== Compose title =====
+    #  Compose title 
     def _update_title(self, force: bool=False):
         parts = []
 
@@ -194,7 +194,7 @@ class MacStatsApp(rumps.App):
             s = s[:117] + "..."
         self.title = s if s else APP_NAME
 
-    # ===== Metrics implementations =====
+    #  Metrics implementations 
     def get_cpu(self) -> str:
         # psutil.cpu_percent measures since last call; using interval=0 returns last computed value
         pct = psutil.cpu_percent(interval=None)
